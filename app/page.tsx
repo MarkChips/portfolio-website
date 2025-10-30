@@ -3,6 +3,7 @@ import TextGif from "@/components/ui/text-gif";
 import { Card } from '@/components/retroui/Card';
 import { Text } from "@/components/retroui/Text";
 import { Avatar } from "@/components/retroui/Avatar";
+import { Badge } from "@/components/retroui/Badge";
 
 export default function Home() {
   return (
@@ -27,8 +28,55 @@ export default function Home() {
             </Card.Content>
           </div>
         </Card>
-        <Text as="h3">About Me</Text>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt iusto, recusandae fugiat quos, aut optio, dolorum blanditiis dicta minima ab magni nam debitis iste explicabo consequatur alias accusantium neque dolor? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae autem officia asperiores cumque? Neque tempora fuga, quasi ab consectetur maiores ipsa rem fugit necessitatibus corrupti repudiandae officiis delectus eum quibusdam?</p>
+        <section>
+          <Text as="h3">About Me</Text>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt iusto, recusandae fugiat quos, aut optio, dolorum blanditiis dicta minima ab magni nam debitis iste explicabo consequatur alias accusantium neque dolor? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae autem officia asperiores cumque? Neque tempora fuga, quasi ab consectetur maiores ipsa rem fugit necessitatibus corrupti repudiandae officiis delectus eum quibusdam?</p>
+        </section>
+        <section>
+          <Text as="h3">My Expertise</Text>
+          <ul>
+            <li>
+              Languages:
+              <Badge>Python</Badge>
+              <Badge>JavaScript</Badge>
+              <Badge>TypeScript</Badge>
+              <Badge>C#</Badge>
+              <Badge>HTML</Badge>
+              <Badge>CSS</Badge>
+            </li>
+            <li>
+              Frameworks:
+              <Badge>Django</Badge>
+              <Badge>Next.js</Badge>
+              <Badge>SvelteKit</Badge>
+              <Badge>Bootstrap</Badge>
+              <Badge>TailwindCSS</Badge>
+            </li>
+            <li>
+              Libraries:
+              <Badge>Node.js</Badge>
+              <Badge>React.js</Badge>
+              <Badge>Playwright</Badge>
+            </li>
+            <li>
+              Tools:
+              <Badge>Lucidchart</Badge>
+              <Badge>Git</Badge>
+              <Badge>GitHub</Badge>
+              <Badge>VS Code</Badge>
+              <Badge>Heroku</Badge>
+              <Badge>Vercel</Badge>
+              <Badge>Balsamiq</Badge>
+              <Badge>Blocs</Badge>
+            </li>
+            <li>
+              Databases:
+              <Badge>PostgreSQL</Badge>
+              <Badge>SQL</Badge>
+              <Badge>MongoDB</Badge>
+            </li>
+          </ul>
+        </section>
       </main>
     </div >
   );
