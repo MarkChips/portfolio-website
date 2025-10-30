@@ -1,6 +1,7 @@
-import { ThemeProvider } from "@/components/theme-provider";
 import { Archivo_Black, Space_Grotesk } from "next/font/google";
 import './globals.css';
+import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeSwitcher } from "@/components/theme-switcher";
 
 const archivoBlack = Archivo_Black({
   subsets: ["latin"],
@@ -30,6 +31,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div className="absolute right-0 m-3">
+            <ThemeSwitcher />
+          </div>
           {children}
         </ThemeProvider>
       </body>
