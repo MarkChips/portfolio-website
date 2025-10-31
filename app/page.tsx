@@ -4,6 +4,7 @@ import { Card } from '@/components/retroui/Card';
 import { Text } from "@/components/retroui/Text";
 import { Avatar } from "@/components/retroui/Avatar";
 import { Badge } from "@/components/retroui/Badge";
+import { Button } from "@/components/retroui/Button";
 
 export default function Home() {
   return (
@@ -77,6 +78,11 @@ export default function Home() {
             </li>
           </ul>
         </section>
+        <a href="/docs/Mark-Chipperfield-CV.pdf" download>
+          <Button>
+            Download my CV
+          </Button>
+        </a>
       </main>
     </div >
   );
