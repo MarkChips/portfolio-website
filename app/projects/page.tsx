@@ -24,34 +24,32 @@ export default function Page() {
                                 keyword search. Built a responsive front-end with SvelteKit and TailwindCSS, featuring pagination and
                                 advanced filtering. Deployed to Vercel for global accessibility.
                             </Card.Description>
-                            <Card.Description>
-                                <ul>
-                                    <li>
-                                        Deployment:
-                                        <a href="https://cablegate-search-app-gray.vercel.app/" target="_blank" className="inline-block">
-                                            <Button variant="link">
-                                                https://cablegate-search-app-gray.vercel.app/
-                                            </Button>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        Repository:
-                                        <a href="https://github.com/MarkChips/cablegate-search-app" target="_blank" className="inline-block">
-                                            <Button variant="link">
-                                                https://github.com/MarkChips/cablegate-search-app
-                                            </Button>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        Technologies used:
-                                        <Badge>SvelteKit</Badge>
-                                        <Badge>JavaScript</Badge>
-                                        <Badge>TypeScript</Badge>
-                                        <Badge>TailwindCSS</Badge>
-                                        <Badge>MongoDB Atlas</Badge>
-                                    </li>
-                                </ul>
-                            </Card.Description>
+                            <ul>
+                                <li>
+                                    Deployment:
+                                    <a href="https://cablegate-search-app-gray.vercel.app/" target="_blank" className="inline-block">
+                                        <Button variant="link">
+                                            https://cablegate-search-app-gray.vercel.app/
+                                        </Button>
+                                    </a>
+                                </li>
+                                <li>
+                                    Repository:
+                                    <a href="https://github.com/MarkChips/cablegate-search-app" target="_blank" className="inline-block">
+                                        <Button variant="link">
+                                            https://github.com/MarkChips/cablegate-search-app
+                                        </Button>
+                                    </a>
+                                </li>
+                                <li>
+                                    Technologies used:
+                                    <Badge>SvelteKit</Badge>
+                                    <Badge>JavaScript</Badge>
+                                    <Badge>TypeScript</Badge>
+                                    <Badge>TailwindCSS</Badge>
+                                    <Badge>MongoDB Atlas</Badge>
+                                </li>
+                            </ul>
                         </Card.Content>
                     </div>
                 </Card>
