@@ -34,7 +34,9 @@ export default function RootLayout({
           <div className="absolute right-0 m-3">
             <ThemeSwitcher />
           </div>
-          {children}
+          <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
