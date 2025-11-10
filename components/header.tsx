@@ -62,7 +62,7 @@ export function Header() {
           }
         )}
       >
-        <Link className="rounded-md p-2 hover:bg-accent" href="/">
+        <Link className="rounded-md p-2 hover:bg-accent hover:text-accent-foreground" href="/">
           <Text as="h3">Home</Text>
         </Link>
         <div className="hidden items-center gap-2 md:flex">
