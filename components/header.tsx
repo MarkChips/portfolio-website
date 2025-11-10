@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { Text } from "./retroui/Text";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import Link from "next/link";
 
 export function Header() {
   const [open, setOpen] = React.useState(false);
@@ -61,18 +62,18 @@ export function Header() {
           }
         )}
       >
-        <a className="rounded-md p-2 hover:bg-accent" href="/">
+        <Link className="rounded-md p-2 hover:bg-accent" href="/">
           <Text as="h3">Home</Text>
-        </a>
+        </Link>
         <div className="hidden items-center gap-2 md:flex">
           {links.map((link, i) => (
-            <a
+            <Link
               className={buttonVariants({ variant: "ghost" })}
               href={link.href}
               key={i}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
         <ThemeProvider
@@ -96,7 +97,7 @@ export function Header() {
       <MobileMenu className="flex flex-col justify-between gap-2" open={open}>
         <div className="grid gap-y-2">
           {links.map((link) => (
-            <a
+            <Link
               className={buttonVariants({
                 variant: "ghost",
                 className: "justify-start",
@@ -105,7 +106,7 @@ export function Header() {
               key={link.label}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
       </MobileMenu>
