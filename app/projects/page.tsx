@@ -52,6 +52,155 @@ export default function Page() {
           </Card.Content>
         </div>
       </Card>
+
+      <Card>
+        <div className="flex justify-around">
+          <Card.Content className="flex items-center">
+            <img
+              className="p-0"
+              src="https://picsum.photos/300"
+              alt="image of the deployed website"
+            />
+          </Card.Content>
+          <Card.Content>
+            <Card.Header>
+              <Card.Title>lunar-lists</Card.Title>
+            </Card.Header>
+            <Card.Description>
+              Capstone full-stack task management site with a space theme. Built with Django (back-end) and Bootstrap 5.3 (front-end), supporting all CRUD operations, user authentication, and task prioritisation. Deployed to Heroku. Iteratively improved based on user feedback.
+            </Card.Description>
+            <ul>
+              <li>
+                Deployment:
+                <a href="https://lunar-lists-658001c5b8b7.herokuapp.com/" target="_blank" className="inline-block">
+                  <Button variant="link">
+                    https://lunar-lists-658001c5b8b7.herokuapp.com/
+                  </Button>
+                </a>
+              </li>
+              <li>
+                Repository:
+                <a href="https://github.com/MarkChips/lunar-lists" target="_blank" className="inline-block">
+                  <Button variant="link">
+                    https://github.com/MarkChips/lunar-lists
+                  </Button>
+                </a>
+              </li>
+              <li>
+                Technologies used:
+                {[
+                  "Django",
+                  "Python",
+                  "JavaScript",
+                  "CSS",
+                  "HTML",
+                  "Bootstrap 5.3",
+                  "PostgreSQL",
+                  "Lucidchart"
+                ].map((tool) => {
+                  return <Badge key={tool}>{tool}</Badge>;
+                })}
+              </li>
+            </ul>
+          </Card.Content>
+        </div>
+      </Card>
+
+      <Card>
+        <div className="flex justify-around">
+          <Card.Content className="flex items-center">
+            <img
+              className="p-0"
+              src="https://picsum.photos/300"
+              alt="image of the deployed website"
+            />
+          </Card.Content>
+          <Card.Content>
+            <Card.Header>
+              <Card.Title>weather-web-app</Card.Title>
+            </Card.Header>
+            <Card.Description>
+              3-day hackathon project: a weather forecast site with a rock-paper-scissors game twist. Used OpenWeatherMap API and Bootstrap 5.3 for UI. Led wireframing and UI design; implemented game logic. Received positive feedback for creativity and usability.
+            </Card.Description>
+            <ul>
+              <li>
+                Deployment:
+                <a href="https://suba-suresh.github.io/weather-web-app/" target="_blank" className="inline-block">
+                  <Button variant="link">
+                    https://suba-suresh.github.io/weather-web-app/
+                  </Button>
+                </a>
+              </li>
+              <li>
+                Repository:
+                <a href="https://github.com/MarkChips/weather-web-app" target="_blank" className="inline-block">
+                  <Button variant="link">
+                    https://github.com/MarkChips/weather-web-app
+                  </Button>
+                </a>
+              </li>
+              <li>
+                Technologies used:
+                {[
+                  "JavaScript",
+                  "HTML",
+                  "CSS",
+                  "Bootstrap 5.3"
+                ].map((tool) => {
+                  return <Badge key={tool}>{tool}</Badge>;
+                })}
+              </li>
+            </ul>
+          </Card.Content>
+        </div>
+      </Card>
+
+      <Card>
+        <div className="flex justify-around">
+          <Card.Content className="flex items-center">
+            <img
+              className="p-0"
+              src="https://picsum.photos/300"
+              alt="image of the deployed website"
+            />
+          </Card.Content>
+          <Card.Content>
+            <Card.Header>
+              <Card.Title></Card.Title>
+            </Card.Header>
+            <Card.Description>
+
+            </Card.Description>
+            <ul>
+              <li>
+                Deployment:
+                <a href="" target="_blank" className="inline-block">
+                  <Button variant="link">
+
+                  </Button>
+                </a>
+              </li>
+              <li>
+                Repository:
+                <a href="" target="_blank" className="inline-block">
+                  <Button variant="link">
+
+                  </Button>
+                </a>
+              </li>
+              <li>
+                Technologies used:
+                {[
+
+                ].map((tool) => {
+                  return <Badge key={tool}>{tool}</Badge>;
+                })}
+              </li>
+            </ul>
+          </Card.Content>
+        </div>
+      </Card>
+
     </main>
   );
 }
