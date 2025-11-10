@@ -14,7 +14,7 @@ const buttonVariants = cva(
           "shadow-md hover:shadow active:shadow-none bg-secondary shadow-primary text-secondary-foreground border-2 border-black transition hover:translate-y-1 active:translate-y-2 active:translate-x-1 hover:bg-secondary-hover",
         outline:
           "shadow-md hover:shadow active:shadow-none bg-transparent border-2 transition hover:translate-y-1 active:translate-y-2 active:translate-x-1",
-        link: "bg-transparent hover:underline",
+        link: "bg-transparent hover:underline break-all",
       },
       size: {
         sm: "px-3 py-1 text-sm shadow hover:shadow-none",
@@ -32,7 +32,7 @@ const buttonVariants = cva(
 
 export interface IButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
+  VariantProps<typeof buttonVariants> {
   asChild?: boolean;
 }
 
