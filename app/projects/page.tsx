@@ -4,7 +4,7 @@ import { Button } from "@/components/retroui/Button";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen w-full max-w-4xl flex-col items-center justify-around py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <main className="max-w-4xl grid grid-cols-1 gap-y-6 py-6 items-center bg-white dark:bg-black sm:items-start">
       <Card>
         <div className="flex justify-around">
           <Card.Content className="flex items-center">
