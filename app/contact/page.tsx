@@ -27,7 +27,7 @@ export default function Page() {
         <Label htmlFor="subject">Subject:</Label>
         <Input type="text" id="subject" name="subject" placeholder="What is your message about?" />
         <Label htmlFor="message">Message:</Label>
-        <Textarea id="message" name="message" placeholder="Enter message..." />
+        <Textarea id="message" name="message" placeholder="Enter message..." className="mb-2" />
         <Button type="submit">Submit</Button>
       </form>
     </main>
