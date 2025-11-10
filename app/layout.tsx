@@ -1,7 +1,5 @@
 import { Archivo_Black, Space_Grotesk } from "next/font/google";
 import './globals.css';
-import { ThemeProvider } from "@/components/theme-provider";
-import { ThemeSwitcher } from "@/components/theme-switcher";
 import { Header } from "@/components/header";
 
 const archivoBlack = Archivo_Black({
@@ -26,20 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${archivoBlack.variable} ${space.variable}`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="absolute right-0 m-3">
-            <ThemeSwitcher />
-          </div>
-          <Header />
-          <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-            {children}
-          </div>
-        </ThemeProvider>
+        <Header />
+        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+          {children}
+        </div>
       </body>
     </html>
   );

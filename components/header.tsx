@@ -6,6 +6,8 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { useScroll } from "@/hooks/use-scroll";
 import { cn } from "@/lib/utils";
 import { Text } from "./retroui/Text";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeSwitcher } from "@/components/theme-switcher";
 
 export function Header() {
   const [open, setOpen] = React.useState(false);
@@ -73,6 +75,14 @@ export function Header() {
             </a>
           ))}
         </div>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <ThemeSwitcher />
+        </ThemeProvider>
         <Button
           className="md:hidden"
           onClick={() => setOpen(!open)}
