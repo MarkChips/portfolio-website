@@ -30,7 +30,7 @@ export function Badge({
   children,
   size = "sm",
   variant = "surface",
-  className = "rounded-full ml-2",
+  className = "rounded-full ml-2 mb-2",
   ...props
 }: ButtonProps) {
   return (

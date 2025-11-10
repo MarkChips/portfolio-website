@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <main className="max-w-4xl grid grid-cols-1 gap-y-6 py-6 items-center bg-white dark:bg-black sm:items-start">
       <Card>
-        <div className="flex justify-around">
+        <div className="md:flex justify-around">
           <Card.Content className="flex items-center">
             <img
               className="p-0"
@@ -40,7 +40,7 @@ export default function Page() {
                   </Button>
                 </a>
               </li>
-              <li>
+              <li className="flex flex-wrap">
                 Technologies used:
                 <Badge>SvelteKit</Badge>
                 <Badge>JavaScript</Badge>
@@ -54,7 +54,7 @@ export default function Page() {
       </Card>
 
       <Card>
-        <div className="flex justify-around">
+        <div className="md:flex justify-around">
           <Card.Content className="flex items-center">
             <img
               className="p-0"
@@ -86,7 +86,7 @@ export default function Page() {
                   </Button>
                 </a>
               </li>
-              <li>
+              <li className="flex flex-wrap">
                 Technologies used:
                 {[
                   "Django",
@@ -107,7 +107,7 @@ export default function Page() {
       </Card>
 
       <Card>
-        <div className="flex justify-around">
+        <div className="md:flex justify-around">
           <Card.Content className="flex items-center">
             <img
               className="p-0"
@@ -139,7 +139,7 @@ export default function Page() {
                   </Button>
                 </a>
               </li>
-              <li>
+              <li className="flex flex-wrap">
                 Technologies used:
                 {[
                   "JavaScript",
@@ -156,7 +156,7 @@ export default function Page() {
       </Card>
 
       <Card>
-        <div className="flex justify-around">
+        <div className="md:flex justify-around">
           <Card.Content className="flex items-center">
             <img
               className="p-0"
@@ -188,7 +188,7 @@ export default function Page() {
                   </Button>
                 </a>
               </li>
-              <li>
+              <li className="flex flex-wrap">
                 Technologies used:
                 {[
 
