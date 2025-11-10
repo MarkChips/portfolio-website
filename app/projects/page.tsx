@@ -1,10 +1,13 @@
 import { Card } from "@/components/retroui/Card";
 import { Badge } from "@/components/retroui/Badge";
 import { Button } from "@/components/retroui/Button";
+import { Text } from "@/components/retroui/Text";
 
 export default function Page() {
   return (
     <main className="max-w-4xl grid grid-cols-1 gap-y-6 py-6 px-2 items-center bg-white dark:bg-black sm:items-start">
+      <Text as="h1">My Projects</Text>
+
       <Card>
         <div className="md:flex justify-around">
           <Card.Content className="flex items-center">

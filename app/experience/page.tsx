@@ -1,5 +1,6 @@
 import { WorkExperience } from "@/components/work-experience";
 import type { ExperienceItemType } from "@/components/work-experience";
+import { Text } from "@/components/retroui/Text";
 
 export default function Page() {
   const workExperience: ExperienceItemType[] = [
@@ -116,7 +117,8 @@ export default function Page() {
   ];
 
   return (
-    <main className="flex min-h-screen w-full max-w-4xl flex-col items-center justify-around py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <main className="max-w-4xl flex-col bg-white dark:bg-black sm:items-start">
+      <Text as="h1" className="py-6">My Experience</Text>
       <WorkExperience experiences={workExperience} />
     </main>
   );
