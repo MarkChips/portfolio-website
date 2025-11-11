@@ -17,9 +17,9 @@ export default function Page() {
   }
 
   return (
-    <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-around py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <main className="max-w-xl flex flex-col m-2 bg-white dark:bg-black">
       <form onSubmit={handleSubmit} method="post">
-        <Text as="h1">Contact Me</Text>
+        <Text as="h1" className="m-4">Contact Me</Text>
         <Label htmlFor="name">Your Name:</Label>
         <Input type="text" id="name" name="name" placeholder="Enter name..." />
         <Label htmlFor="email">Your Email:</Label>

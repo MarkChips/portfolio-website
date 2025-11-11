@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${archivoBlack.variable} ${space.variable}`}>
         <Header />
-        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+        <div className="min-h-[calc(100vh-56px)] flex items-start justify-center bg-zinc-50 font-sans dark:bg-black">
           {children}
         </div>
       </body>

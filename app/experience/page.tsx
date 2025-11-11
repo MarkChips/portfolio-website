@@ -117,7 +117,7 @@ export default function Page() {
   ];
 
   return (
-    <main className="max-w-4xl flex-col bg-white dark:bg-black sm:items-start">
+    <main className="max-w-4xl flex-col bg-white dark:bg-black">
       <Text as="h1" className="py-6">My Experience</Text>
       <WorkExperience experiences={workExperience} />
     </main>

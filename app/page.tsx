@@ -7,7 +7,7 @@ import { Button } from "@/components/retroui/Button";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-around py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <main className="flex w-full max-w-3xl flex-col bg-white dark:bg-black">
       <TextGif text="Mark Chipperfield" gifUrl="https://media.giphy.com/media/4bhs1boql4XVJgmm4H/giphy.gif" />
       <Text as="h4">Full-Stack Software Developer</Text>
       <Card>

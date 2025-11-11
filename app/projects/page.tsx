@@ -5,7 +5,7 @@ import { Text } from "@/components/retroui/Text";
 
 export default function Page() {
   return (
-    <main className="max-w-4xl grid grid-cols-1 gap-y-6 py-6 px-2 items-center bg-white dark:bg-black sm:items-start">
+    <main className="max-w-4xl grid grid-cols-1 gap-y-6 py-6 mx-2 items-center bg-white dark:bg-black">
       <Text as="h1">My Projects</Text>
 
       <Card>
