@@ -8,10 +8,10 @@ import { Button } from "@/components/retroui/Button";
 export default function Home() {
   return (
     // <main className="flex grow w-full max-w-3xl flex-col bg-white dark:bg-black">
-    <main className="h-[calc(100vh-56px)] snap-y snap-mandatory scroll-smooth overflow-y-scroll">
+    <main className="h-[calc(100vh-56px)] snap-y snap-mandatory scroll-smooth overflow-y-scroll w-screen">
       <div className="flex flex-col items-center">
 
-        <section className="snap-start h-screen">
+        <section className="snap-start h-screen py-40">
           <TextGif text="Mark Chipperfield" gifUrl="https://media.giphy.com/media/4bhs1boql4XVJgmm4H/giphy.gif" />
           <Text as="h4">Full-Stack Software Developer</Text>
           <Card>
@@ -33,12 +33,12 @@ export default function Home() {
           </Card>
         </section>
 
-        <section className="snap-start h-screen">
+        <section className="snap-start h-screen py-40 max-w-3xl">
           <Text as="h3">About Me</Text>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt iusto, recusandae fugiat quos, aut optio, dolorum blanditiis dicta minima ab magni nam debitis iste explicabo consequatur alias accusantium neque dolor? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae autem officia asperiores cumque? Neque tempora fuga, quasi ab consectetur maiores ipsa rem fugit necessitatibus corrupti repudiandae officiis delectus eum quibusdam?</p>
         </section>
 
-        <section className="snap-start h-screen">
+        <section className="snap-start h-screen py-40">
           <Text as="h3">My Expertise</Text>
           <ul>
             <li>
