@@ -11,16 +11,15 @@ export default function Home() {
     <main className="h-[calc(100vh-56px)] snap-y snap-mandatory scroll-smooth overflow-y-scroll w-screen">
       <div className="flex flex-col items-center">
 
-        <section className="snap-start h-screen py-40">
+        <section className="snap-start h-screen py-40 space-y-2 max-w-3xl">
           <TextGif text="Mark Chipperfield" gifUrl="https://media.giphy.com/media/4bhs1boql4XVJgmm4H/giphy.gif" />
           <Text as="h4">Full-Stack Software Developer</Text>
           <Card>
             <div className="flex justify-between items-center">
               <Card.Header>
-                <Card.Title>Hello World!</Card.Title>
+                <Card.Title>Hello World! 👋</Card.Title>
                 <Card.Description>
-                  I can not find what to write here.. so imagine I wrote some good
-                  stuff.
+                  Hello and welcome to my website. Here you can explore my projects, see my work experience, and even contact me. Scroll down for more. ⬇️
                 </Card.Description>
               </Card.Header>
               <Card.Content>
