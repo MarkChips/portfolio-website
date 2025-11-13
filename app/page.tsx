@@ -32,9 +32,15 @@ export default function Home() {
           </Card>
         </section>
 
-        <section className="snap-start h-screen py-40 max-w-3xl">
+        <section className="snap-start h-screen md:py-20 max-w-3xl">
           <Text as="h3">About Me</Text>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt iusto, recusandae fugiat quos, aut optio, dolorum blanditiis dicta minima ab magni nam debitis iste explicabo consequatur alias accusantium neque dolor? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae autem officia asperiores cumque? Neque tempora fuga, quasi ab consectetur maiores ipsa rem fugit necessitatibus corrupti repudiandae officiis delectus eum quibusdam?</p>
+          <p className="text-balance">
+            From West Sussex, born and raised, on a computer spent most of my days. I can't continue like this. My life has taken many turns. I worked in Ecommerce for six years, but I wanted greater progression, so I started learning new skills. I began by trying to learn Data Science which was an intesting albeit advanced choice to make. After struggling with machine learning, I then turned my eye to boat building. I enjoyed working in the intense team-based environment, but my allergies prevented me from further pursuing that path.
+            <br /><br />
+            Afterwards I briefly considered joining the navy, but then I came across a full-stack software development Code Institute bootcamp. This was a great environment for me to learn in: tutor support and a community of students. I learnt HTML, CSS, JavaScript, Python, and Django in that order. It gave me the experience of both working in teams and independently. I passed with flying colours.
+            <br /><br />
+            Since then I have been applying and continuing to learn: trying out new languages and frameworks, publishing projects. I am currently helping relaunch a Church website, and I also do some Prompt Engineering for DataAnnotation.Tech. I am eager for my first software development role to put all my skills to the test.
+          </p>
         </section>
 
         <section className="snap-start h-screen py-40">
