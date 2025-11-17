@@ -4,6 +4,7 @@ import { Text } from "@/components/retroui/Text";
 import { Avatar } from "@/components/retroui/Avatar";
 import { Badge } from "@/components/retroui/Badge";
 import { Button } from "@/components/retroui/Button";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -46,14 +47,45 @@ export default function Home() {
         <section className="snap-start h-screen py-40">
           <Text as="h3">My Expertise</Text>
           <ul>
-            <li>
+            <li className="flex space-x-2">
               Languages:
-              <Badge>Python</Badge>
-              <Badge>JavaScript</Badge>
-              <Badge>TypeScript</Badge>
-              <Badge>C#</Badge>
-              <Badge>HTML</Badge>
-              <Badge>CSS</Badge>
+              <Image
+                className="ms-2"
+                width={40}
+                height={40}
+                src="/brands/python.svg"
+                alt="Python"
+              />
+              <Image
+                width={40}
+                height={40}
+                src="/brands/javascript.svg"
+                alt="JavaScript"
+              />
+              <Image
+                width={40}
+                height={40}
+                src="/brands/typescript.svg"
+                alt="TypeScript"
+              />
+              <Image
+                width={40}
+                height={40}
+                src="/brands/csharp.svg"
+                alt="C Sharp"
+              />
+              <Image
+                width={40}
+                height={40}
+                src="/brands/html5.svg"
+                alt="HTML5"
+              />
+              <Image
+                width={40}
+                height={40}
+                src="/brands/css.svg"
+                alt="CSS"
+              />
             </li>
             <li>
               Frameworks:
@@ -87,6 +119,7 @@ export default function Home() {
               <Badge>MongoDB</Badge>
             </li>
           </ul>
+          {/* Task: Adjust width to match button */}
           <a href="/docs/Mark-Chipperfield-CV.pdf" download>
             <Button>
               Download my CV
